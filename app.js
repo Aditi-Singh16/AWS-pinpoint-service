@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
     var applicationId = "c94acd5515384da987a9578f9fe96659";
     var messageType = "TRANSACTIONAL"; //message type
     var url = req.protocol + '://' + req.get('host') + req.originalUrl;
-    if (time == '' || day == '' || url == 'https://aws-pinpoint-service-aditi.herokuapp.com/') {
+    if (time == '' || day == '' || req.originalUrl.length < 2) {
         res.end(JSON.stringify({ error: "Please specify time and day" }))
     } else {
         AWS.config.update(config);
