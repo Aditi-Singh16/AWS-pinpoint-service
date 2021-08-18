@@ -20,9 +20,8 @@ app.get('/', (req, res) => {
     var message = "Dear" + destinationNumber + "Your appointment has been confirmed for " + day + " at " + time; //Message Template
     var applicationId = "c94acd5515384da987a9578f9fe96659";
     var messageType = "TRANSACTIONAL"; //message type
-
-
-    if (time == '' || day == '') {
+    var url = req.protocol + '://' + req.get('host') + req.originalUrl;
+    if (time == '' || day == '' || url == 'https://aws-pinpoint-service-aditi.herokuapp.com') {
         res.end(JSON.stringify({ error: "Please specify time and day" }))
     } else {
         AWS.config.update(config);
