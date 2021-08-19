@@ -1,4 +1,4 @@
-# ✨AWS-pinpoint-service-API✨
+# ✨AWS-Pinpoint-Service-API✨
 
 ### A service to send SMS!
 
@@ -41,14 +41,15 @@ git clone https://github.com/Aditi-Singh16/Doctors-Appointment-SMS-Sender-App.gi
 5. And you are good to go<br>
 <b>The App UI is:</b>
 <p float="left">
-  <img src="https://user-images.githubusercontent.com/74586135/130029771-8b8e2d60-13b9-4ed9-8750-a3192e246927.jpeg" width="190" height="360">
-  <img src="https://user-images.githubusercontent.com/74586135/130029798-d8c07868-eefb-422f-b443-29ff0466b844.jpeg" width="190" height="360">
+  <img src="https://user-images.githubusercontent.com/74586135/130063887-2707af8b-9a94-4903-8a69-980f0515d947.jpeg" width="190" height="360">
+  <img src="https://user-images.githubusercontent.com/74586135/130063893-2945118a-7a23-403b-916c-505bb99514f6.jpeg" width="190" height="360">
 </p>
 
 
 
 
-
+> Please Note:
+> My account has reached the limit for free sms , so sms won't be sent
 
 
 
