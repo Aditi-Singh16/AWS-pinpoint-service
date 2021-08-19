@@ -10,19 +10,18 @@ const config = {
     region: "ap-southeast-1"
 }
 var originationNumber = "9833589076"; //number you have added to your pinpoint project (only 5 numbers are free)
-var destinationNumber = "+919833589076"; //destination number must be in E.164 format
+var destinationNumber = "+919833589076"; //destination number must be in E.164 format and added to your sandbox
 
 
 
 app.get('/', (req, res) => {
     var time = req.query.time;//fetch time
-    var day = req.query.day;//fetch day
-    var message = "Dear" + destinationNumber + "Your appointment has been confirmed for " + day + " at " + time; //Message Template
+    var date = req.query.date;//fetch date
+    var message = "Dear" + destinationNumber + "Your appointment has been confirmed on " + date + " at " + time; //Message Template
     var applicationId = "c94acd5515384da987a9578f9fe96659";
     var messageType = "TRANSACTIONAL"; //message type
-    var url = req.protocol + '://' + req.get('host') + req.originalUrl;
-    if (time == '' || day == '' || url == 'https://aws-pinpoint-service-aditi.herokuapp.com') {
-        res.end(JSON.stringify({ error: "Please specify time and day" }))
+    if (time == '' || date == '' || req.originalUrl.length < 2) {
+        res.end(JSON.stringify({ error: "Please specify time and date" }))
     } else {
         AWS.config.update(config);
 
