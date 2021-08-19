@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
     var applicationId = "c94acd5515384da987a9578f9fe96659";
     var messageType = "TRANSACTIONAL"; //message type
 
-    if (time == '' || date == '' || req.originalUrl.length < 2) {
+    if (time == undefined || date == undefined || req.originalUrl.length < 2) {
         res.end(JSON.stringify({ error: "Please specify time and date" }))
     } else {
         AWS.config.update(config);
