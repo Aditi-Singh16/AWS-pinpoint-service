@@ -49,7 +49,8 @@ git clone https://github.com/Aditi-Singh16/Doctors-Appointment-SMS-Sender-App.gi
 
 
 > Please Note:
-> My account has reached the limit for free sms , so sms won't be sent
+> My account has reached the limit for free sms , so sms won't be sent <br>
+> but you can still set up yours :)
 
 
 
