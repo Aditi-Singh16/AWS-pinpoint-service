@@ -20,6 +20,7 @@ app.get('/', (req, res) => {
     var message = "Dear" + destinationNumber + "Your appointment has been confirmed on " + date + " at " + time; //Message Template
     var applicationId = "c94acd5515384da987a9578f9fe96659";
     var messageType = "TRANSACTIONAL"; //message type
+
     if (time == '' || date == '' || req.originalUrl.length < 2) {
         res.end(JSON.stringify({ error: "Please specify time and date" }))
     } else {
